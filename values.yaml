@@ -1,0 +1,24 @@
+replicaCount: 1
+restartPolicy: Never
+index: >-
+  <h1>Hello</h1>
+  <p>You got it dude!</p>
+
+image:
+  repository: nginx
+  tag: 1.21.1
+  pullPolicy: IfNotPresent
+
+service:
+  annotations: {}
+  clusterIP: ""
+  externalIPs: []
+  loadBalancerIP: ""
+  loadBalancerSourceRanges: []
+  type: NodePort
+  port: 80
+
+podAnnotations: {}
+
+
+nodeSelector: {}
