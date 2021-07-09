@@ -4,8 +4,8 @@
 * run helm command to install , " helm install nginx(name of the deployment) .(location of the chart) 
 * run kubectl command to see if the pods and services are working as expected. " kubectl get all -n namespace " 
 * output should be like :
----
- k get all 
+--
+k get all 
 NAME                              READY   STATUS    RESTARTS   AGE
 pod/nginx-nginx-74495645b-sjplb   1/1     Running   0          8m26s
 
