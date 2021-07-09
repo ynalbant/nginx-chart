@@ -21,4 +21,7 @@ service:
 podAnnotations: {}
 
 
+resources:{}
+
+
 nodeSelector: {}
