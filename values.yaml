@@ -1,12 +1,13 @@
 replicaCount: 1
 restartPolicy: Never
+
 index: >-
   <h1>Hello</h1>
   <p>You got it dude!</p>
 
 image:
   repository: nginx
-  tag: 1.21.1
+  tag: 1.14.0
   pullPolicy: IfNotPresent
 
 service:
@@ -17,11 +18,10 @@ service:
   loadBalancerSourceRanges: []
   type: NodePort
   port: 80
+  nodePort: "30001"
 
 podAnnotations: {}
 
-
-resources:{}
-
+resources: {}
 
 nodeSelector: {}
